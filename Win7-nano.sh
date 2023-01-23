@@ -1,3 +1,6 @@
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip -o ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+clear
 read -p "Paste authtoken here (Copy and Ctrl+V to paste then press Enter): " CRP
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 5900 &>/dev/null &
@@ -13,7 +16,6 @@ curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*publ
 sudo qemu-system-x86_64 \
   -m 8G \
   -cpu EPYC \
-  -enable-kvm
   -boot order=d \
   -drive file=windows7_super-nano_lite.iso,media=cdrom \
   -drive file=20GB.qcow2 \

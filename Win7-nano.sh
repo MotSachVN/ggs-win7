@@ -8,7 +8,7 @@ sudo apt-get update && apt-get install qemu -y
 sudo apt install qemu-utils -y
 sudo apt install qemu-system-x86-xen -y
 sudo apt install qemu-system-x86 -y
-wget -0 20GB.qcow2 'https://www.dropbox.com/s/6yzobwz46tzti0l/20GB.qcow2?dl=1'
+wget -O 20GB.qcow2 'https://www.dropbox.com/s/6yzobwz46tzti0l/20GB.qcow2?dl=1'
 wget -O RTL8139F.iso 'https://drive.google.com/uc?export=download&id=1wDL8vo9mmYKw1HKXZzaYHoKmzSt_wXai'
 wget -O windows7_super-nano_lite.iso 'https://firebasestorage.googleapis.com/v0/b/baoanbui-ac174.appspot.com/o/Windows%207%2FWindows7_super-nano_lite.iso?alt=media&token=d32c52b1-8481-4c4d-86cc-88483a6d7550'
 
